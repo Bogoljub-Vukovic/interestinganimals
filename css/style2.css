@@ -1,0 +1,404 @@
+/* pomocni kod za ciscenje float za "sve" browser pretrazivace */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+/* Glavne sekcije sajta: header, foother, main body*/
+
+body {
+    font-family: Tahoma, sans-serif;
+
+}
+
+/* header */
+
+h1 {
+    font-family: Tahoma, sans-serif;
+  
+}
+
+p {
+    font-family: "Times New Roman";
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.header {
+    background-color: #5fc92e;
+    text-align: center;
+    color: rgb(32, 32, 151);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    box-sizing: border-box;  
+    position: relative;
+}
+
+/* animacija oka sharingan */
+
+@keyframes sharAnimation {
+
+    0% {
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 0.4;
+    }
+    2.6%{
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    9.6% {
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    23.6%{
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    30.6%{
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    33.3% {
+        background-position: -221px -238px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 0.4;
+    }
+    33.301% {
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 0.4;
+    }
+    35.9%{
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    42.9% {
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    56.9%{
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    63.9%{
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    66.6% {
+        background-position: -111px -324px; 
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 0.4;
+    }
+    66.601% {
+        background-position: -221px -158px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 0.4;
+    }
+    69.2%{
+        background-position: -221px -158px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    76.2% {
+        background-position: -221px -158px; 
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0Deg);
+        opacity: 1;
+    }
+    90.2%{
+        background-position: -221px -158px;
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    97.2%{
+        background-position: -221px -158px;
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 1;
+    }
+    100% {
+        background-position: -221px -158px;
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720Deg);
+        opacity: 0.4;
+    }
+
+}
+
+.sharingan {
+    margin: 10px 0px 0px 10px;
+    background-image: url("../images/sprites.jpg");     
+    background-position: -221px -238px; 
+	width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 30px;
+    float: left;
+    animation: sharAnimation 24s infinite;
+}
+
+/* kraj css za animaciju oka */
+
+/* navigation bar */
+.site-nav {
+    margin-top: 40px;
+}
+  
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    display: block;
+    color: #617140;;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #5f6863;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 96%;
+}
+
+.site-nav a:hover {
+    background-color: #a4e287;
+    border-bottom: 3px solid #a4e287;
+}
+
+/* signup i login nav */
+
+.site-signlogin ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-signlogin li {
+    list-style: none;
+    float: right;
+    margin-left: 5px;
+}
+
+.site-signlogin a {
+    display: block;
+    text-decoration: none;
+    background-color: antiquewhite;
+	background-image: url("../images/sprites.jpg");
+	width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 10px 20px 0px 0px;
+}
+
+.sign {
+    background-position: -77px -80px;
+}
+
+.login {
+    background-position: -221px -158px; 
+}
+
+.sign:hover {
+    background-position: 0px -238px; 
+    -ms-transform: translate(0px,1px); /* IE 9 */
+    -webkit-transform: translate(0px,1px); /* Safari */
+    transform: translate(0px,1px);
+}
+
+.login:hover {
+    background-position: -5px -80px; 
+    -ms-transform: translate(0px,1px); /* IE 9 */
+    -webkit-transform: translate(0px,1px); /* Safari */
+    transform: translate(0px,1px);
+}
+
+.notif {
+    visibility: hidden;
+    background-color: black;
+    display: block;
+    color: white;
+    width: 68px;
+    border-radius: 3px;
+    padding: 3px;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 10;
+    top: 71px;
+    right: 10px;
+}
+
+#signup {
+    top: 71px;
+    right: 99px;
+}
+
+#login {
+    top: 71px;
+    right: 13px;
+}
+
+/* End header*/
+
+
+/* Foother*/
+.footer {
+    background-color: #5fc92e;
+    text-align: center;
+    color: rgb(32, 32, 151);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding: 30px; 
+    box-sizing: border-box;
+    font-size: 120%;
+}
+
+/* main body */
+
+.mainbody {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* karusel */
+
+.karusel {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.karusel img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.karusel img:hover {
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2); /* Standard syntax */
+}
+
+.description {
+    display: table;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 2% 0%;
+
+}
+
+/* Responsive web dizajn */
+
+@media screen and (max-width: 850px){
+
+    .header, 
+    .mainbody, 
+    .footer,
+    {
+        max-width: 100%;
+    
+    }
+    .site-nav li {
+        margin-right: 0px;
+        width: 50%;
+    }
+    .header {
+        padding-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .site-nav li {
+        margin-right: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+    .karusel {
+        height: 240px;
+    }
+    .description {
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .karusel {
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
